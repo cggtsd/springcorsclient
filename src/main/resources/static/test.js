@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#apiCall").onClick(function(){
+        $.ajax({
+            url:'http://localhost:8080/test',
+            success:function(result){
+                $('#apiResponse').html(result)
+            }
+        })
+    })
+})
